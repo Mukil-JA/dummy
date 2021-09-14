@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<video width="100%" controls>
+  <source src="Course-Files\Course-Files\Section 2 - HTML Development\Lecture 14 - Embed Video\ya.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<img src="https://www.freepik.com/free-vector/abstract-banner-background-with-red-shapes_13810877.htm#page=1&query=background&position=0" alt="Mountain View" style="width:900px;">
+
+</body>
+</html>

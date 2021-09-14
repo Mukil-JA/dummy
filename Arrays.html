@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<body>
+	<p> <b>JavaScript Arrays </b></p>
+	<p id="demo"></p>
+	<p id="len"></p>
+	<p id="tostring"></p>
+	<p id="join1"></p>
+	<p id="join2"></p>
+	<p id="join3"></p>
+	<p id="join4"></p>
+	<p id="join5"></p>
+	<p id="join6"></p>
+	
+	<p id="sort"></p>
+	<p id="reverse"></p>
+	<p id="concat"></p>
+	<Script type="text/javascript">
+	
+	var fruits = ["Apple", "Orange", "Pear", "Grape", "Tangerine", "Mango"];
+	document.getElementById("demo").innerHTML = fruits[2];
+	document.getElementById("len").innerHTML = fruits.length;
+	fruits.shift();
+	document.getElementById("tostring").innerHTML = fruits.toString();
+	fruits.pop();
+	document.getElementById("join1").innerHTML = fruits.join(" * ");
+	fruits.push("cherry");
+	document.getElementById("join2").innerHTML = fruits.join(" * ");
+	fruits.unshift("Kiwi");
+	document.getElementById("join3").innerHTML = fruits.join(" * ");
+	fruits[2] = "Sapotta";
+	document.getElementById("join4").innerHTML = fruits.join(" * ");
+	delete fruits[1];
+	document.getElementById("join5").innerHTML = fruits.join(" * ");
+	fruits.splice(2, 0, "Lemon", "Banana")
+	document.getElementById("join6").innerHTML = fruits.join(" * ");
+	
+	var cars = ["Volvo", "Acura", "Honda", "Nexus"];
+	cars.sort();
+	document.getElementById("sort").innerHTML = cars;
+	cars.reverse();
+	document.getElementById("reverse").innerHTML = cars;
+	var combined = fruits.concat(cars);
+	document.getElementById("concat").innerHTML = combined;
+	</script>
+
+</body>
+</html>
+		
+		

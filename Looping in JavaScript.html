@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<body>
+
+	<p> Looping in JavaScript </p>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	
+	<button onclick="myFunction()"> Click here </button>
+	<br>
+	<Script type="text/javascript">
+	function myFunction() {
+	var i = 0;
+		do {
+			document.write(i+"<br>");
+			i++;
+		}
+		while(i < 10)
+		
+	}
+	
+	document.write("for loop");
+	document.write("<br>");
+	
+	var count;
+	for(count = 0; count <= 10; count++) {
+		document.write(count);
+		document.write("<br>");
+	}
+	
+	
+	var txt = "";
+	var person = {fname:"John", lname:"Smith", age:30};
+	var x;
+	for(x in person) {
+		txt += person[x] + " ";
+	}
+	document.getElementById("demo1").innerHTML=txt;
+	
+	document.write("while loop");
+	document.write("<br>");
+	var i = 0;
+	while(i < 20) {
+		document.write(i);
+		document.write("<br>");
+		i++;
+	}
+	
+	document.write("break statement");
+	document.write("<br>");
+	var i;
+	for(i = 0; i <= 10; i++) {
+		if(i==3) {
+			break;
+		}
+		document.write(i+"<br>");
+	}
+	
+	document.write("continue statement");
+	document.write("<br>");
+	var i;
+	for(i = 0; i <= 10; i++) {
+		if(i==3) {
+			continue;
+		}
+		document.write(i+"<br>");
+	}
+	
+	
+	
+	</script>
+
+</body>
+</html>
+		
+		
